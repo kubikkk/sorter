@@ -1,5 +1,6 @@
 {
     "name": "kubik/sorter",
+    "description": "Sort library",
     "type": "library",
     "authors": [
         {
@@ -17,14 +18,11 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "kubik\\Sorter\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "App\\Test\\": "tests/"
-        }
-    },
+
+
     "scripts": {
         "cs-check": "php-cs-fixer fix --allow-risky=yes --diff --ansi --dry-run",
         "cs-fix": "php-cs-fixer fix --allow-risky=yes --diff --ansi",

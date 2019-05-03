@@ -1,6 +1,19 @@
 #!/usr/bin/env php
 <?php
 
+use \kubik\Sorter\{SortStrategy, SorterFromLarge, SorterFromSmaller, NullObject};
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 
+$array=[1,4,5,7,3,2,11,3];
+
+$sorter=new SortStrategy(new SorterFromSmaller());
+print_r($sorter->sort($array));
+
+
+$sorter->setStrategy(new SorterFromLarge());
+print_r($sorter->sort($array));
+
+$sorter->setStrategy(new NullObject());
+print_r($sorter->sort($array));
