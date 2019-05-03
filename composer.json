@@ -2,6 +2,7 @@
     "name": "kubik/sorter",
     "description": "Sort library",
     "type": "library",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Anton Kubrak",
