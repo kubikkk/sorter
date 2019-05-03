@@ -1,7 +1,5 @@
 <?php
 
-
-
 namespace kubik\Sorter;
 
 class SorterFromSmaller implements SorterInterface

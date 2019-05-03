@@ -1,6 +1,5 @@
 <?php
 
-
 namespace kubik\Sorter;
 
 
