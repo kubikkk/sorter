@@ -15,17 +15,17 @@ Usage
 -----
 Sorting from smaller
 ```php
-$sorter=new SortStrategy(new SorterFromSmaller());
+$sorter=new Sorter(new SorterFromSmaller());
 print_r($sorter->sort($array));
 ```
 Sorting from large
 ```php
-$sorter=new SortStrategy(new SorterFromLarge());
+$sorter->setStrategy(new SorterFromLarge());
 print_r($sorter->sort($array));
 ```
 Switch startegy sorting
 ```php
-$sorter=new SortStrategy(new SorterFromSmaller());
+$sorter=new Sorter(new SorterFromSmaller());
 print_r($sorter->sort($array));
 $sorter->setStrategy(new SorterFromLarge());
 print_r($sorter->sort($array));
