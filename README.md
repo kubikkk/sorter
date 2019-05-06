@@ -20,7 +20,7 @@ print_r($sorter->sort($array));
 ```
 Sorting from large
 ```php
-$sorter->setStrategy(new SorterFromLarge());
+$sorter=new Sorter(new SorterFromLarge());
 print_r($sorter->sort($array));
 ```
 Switch startegy sorting
