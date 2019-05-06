@@ -1,8 +1,8 @@
 <?php
 
-namespace kubik\Sorter;
+namespace Kubik\Sorter;
 
-interface SorterInterface
+interface SorterStrategyInterface
 {
     public function sort(array $array): array ;
 }

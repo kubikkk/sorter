@@ -1,8 +1,8 @@
 <?php
 
-namespace kubik\Sorter;
+namespace Kubik\Sorter;
 
-class SorterFromLarge implements SorterInterface
+class SorterFromLarge implements SorterStrategyInterface
 {
     public function sort(array $array): array
     {

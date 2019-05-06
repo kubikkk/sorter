@@ -1,18 +1,18 @@
 <?php
 
-namespace kubik\Sorter;
+namespace Kubik\Sorter;
 
-class SortStrategy
+class Sorter
 {
     private $strategy;
 
-    public function __construct(SorterInterface $strategy)
+    public function __construct(SorterStrategyInterface $strategy)
     {
         $this->strategy=$strategy;
     }
 
 
-    public function setStrategy(SorterInterface $strategy)
+    public function setStrategy(SorterStrategyInterface $strategy):void
     {
         $this->strategy=$strategy;
     }
