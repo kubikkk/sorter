@@ -1,14 +1,17 @@
 <?php
 
-namespace Kubik\Sorter;
+/*
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
+namespace Kubik\Sorter;
 
 class NullObject implements SorterStrategyInterface
 {
-    public function sort(array $array):array
+    public function sort(array $array): array
     {
-        // This is Null Object
+        // Return original array
         return $array;
     }
-
 }

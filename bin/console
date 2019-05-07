@@ -6,9 +6,9 @@ use \Kubik\Sorter\{Sorter, SorterFromLarge, SorterFromSmaller, NullObject};
 require_once __DIR__ . '/../vendor/autoload.php';
 
 
-$array=[1,4,5,7,3,2,11,3];
+$array = [1,4,5,7,3,2,11,3];
 
-$sorter=new Sorter(new SorterFromSmaller());
+$sorter = new Sorter(new SorterFromSmaller());
 print_r($sorter->sort($array));
 
 
